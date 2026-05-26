@@ -1,0 +1,42 @@
+{
+  "name": "powerbi-native-3d-scatter",
+  "description": "Native Power BI custom visual scaffold for a 3D scatterplot.",
+  "version": "0.5.1.0",
+  "engines": {
+    "node": "20.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c0rrel8/local-codex.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "check:node": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/run-node20.ps1 ./check-node.mjs",
+    "doctor": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/run-node20.ps1 ./doctor.mjs",
+    "bootstrap": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/bootstrap.ps1",
+    "host:verify": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/host-verify.ps1",
+    "pbiviz": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/run-pbiviz.ps1",
+    "start": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/run-pbiviz.ps1 start",
+    "package": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -File ./scripts/run-pbiviz.ps1 package",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build:tests": "tsc --module nodenext --moduleResolution nodenext --target es2022 --outDir ./.tmp/tests ./src/data.ts ./src/scene.ts ./src/webglScene.types.ts ./src/webglScene.ts",
+    "test": "tsc --module nodenext --moduleResolution nodenext --target es2022 --outDir ./.tmp/tests ./src/data.ts ./src/scene.ts ./src/webglScene.types.ts ./src/webglScene.ts && node ./scripts/run-tests.mjs",
+    "verify": "eslint . && tsc --noEmit && tsc --module nodenext --moduleResolution nodenext --target es2022 --outDir ./.tmp/tests ./src/data.ts ./src/scene.ts ./src/webglScene.types.ts ./src/webglScene.ts && node ./scripts/run-tests.mjs"
+  },
+  "dependencies": {
+    "@types/d3": "7.4.3",
+    "d3": "7.9.0",
+    "powerbi-visuals-api": "~5.11.0",
+    "powerbi-visuals-utils-dataviewutils": "^6.1.0",
+    "powerbi-visuals-utils-formattingmodel": "6.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "eslint": "^9.11.1",
+    "eslint-plugin-powerbi-visuals": "^1.0.0",
+    "powerbi-visuals-tools": "7.0.3",
+    "typescript": "5.5.4"
+  }
+}

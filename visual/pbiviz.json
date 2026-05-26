@@ -1,0 +1,30 @@
+{
+  "visual": {
+    "name": "native3DScatter",
+    "displayName": "Native 3D Scatter",
+    "displayNameKey": "Visual_DisplayName",
+    "guid": "native3DScatterB6091A08A42A4A299DBB4C9F4E92B6F1",
+    "visualClassName": "Visual",
+    "version": "0.5.1.0",
+    "description": "Native Power BI custom visual for 3D scatterplots.",
+    "descriptionKey": "Visual_Description",
+    "supportUrl": "https://github.com/c0rrel8/local-codex",
+    "gitHubUrl": "https://github.com/c0rrel8/local-codex"
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "Corey",
+    "email": "corey@example.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [
+    "stringResources/en-US/resources.resjson"
+  ],
+  "version": "0.5.1.0"
+}

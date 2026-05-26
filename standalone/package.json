@@ -1,0 +1,13 @@
+{
+  "name": "isometric-voxel-scene",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check src/main.js && node --check src/voxelScene.js"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  }
+}

@@ -1,0 +1,580 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "X Axis",
+            "displayNameKey": "Role_X_DisplayName",
+            "name": "x",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Y Axis",
+            "displayNameKey": "Role_Y_DisplayName",
+            "name": "y",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Z Axis",
+            "displayNameKey": "Role_Z_DisplayName",
+            "name": "z",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Size",
+            "displayNameKey": "Role_Size_DisplayName",
+            "name": "size",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Category",
+            "displayNameKey": "Role_Category_DisplayName",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tooltip",
+            "displayNameKey": "Role_Tooltip_DisplayName",
+            "name": "tooltip",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "scene": {
+            "displayName": "Scene",
+            "displayNameKey": "Object_Scene_DisplayName",
+            "properties": {
+                "backgroundColor": {
+                    "displayName": "Background color",
+                    "displayNameKey": "Property_BackgroundColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "overlayBackgroundColor": {
+                    "displayName": "Overlay background color",
+                    "displayNameKey": "Property_OverlayBackgroundColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "overlayTextColor": {
+                    "displayName": "Overlay text color",
+                    "displayNameKey": "Property_OverlayTextColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "display": {
+            "displayName": "Display",
+            "displayNameKey": "Object_Display_DisplayName",
+            "properties": {
+                "showTitle": {
+                    "displayName": "Show title",
+                    "displayNameKey": "Property_ShowTitle_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showSummary": {
+                    "displayName": "Show summary",
+                    "displayNameKey": "Property_ShowSummary_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showOverlay": {
+                    "displayName": "Show overlay",
+                    "displayNameKey": "Property_ShowOverlay_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showBadges": {
+                    "displayName": "Show badges",
+                    "displayNameKey": "Property_ShowBadges_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showStatus": {
+                    "displayName": "Show status",
+                    "displayNameKey": "Property_ShowStatus_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showFooter": {
+                    "displayName": "Show footer",
+                    "displayNameKey": "Property_ShowFooter_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "text": {
+            "displayName": "Text",
+            "displayNameKey": "Object_Text_DisplayName",
+            "properties": {
+                "titleColor": {
+                    "displayName": "Title color",
+                    "displayNameKey": "Property_TitleColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "summaryColor": {
+                    "displayName": "Summary color",
+                    "displayNameKey": "Property_SummaryColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "statusColor": {
+                    "displayName": "Status color",
+                    "displayNameKey": "Property_StatusColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "footerColor": {
+                    "displayName": "Footer color",
+                    "displayNameKey": "Property_FooterColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "badgeTextColor": {
+                    "displayName": "Badge text color",
+                    "displayNameKey": "Property_BadgeTextColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "badgeBackgroundColor": {
+                    "displayName": "Badge background color",
+                    "displayNameKey": "Property_BadgeBackgroundColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "axes": {
+            "displayName": "Axes",
+            "displayNameKey": "Object_Axes_DisplayName",
+            "properties": {
+                "showAxes": {
+                    "displayName": "Show axes",
+                    "displayNameKey": "Property_ShowAxes_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showGrid": {
+                    "displayName": "Show grid",
+                    "displayNameKey": "Property_ShowGrid_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "gridColor": {
+                    "displayName": "Grid color",
+                    "displayNameKey": "Property_GridColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "axisXColor": {
+                    "displayName": "X axis color",
+                    "displayNameKey": "Property_AxisXColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "axisYColor": {
+                    "displayName": "Y axis color",
+                    "displayNameKey": "Property_AxisYColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "axisZColor": {
+                    "displayName": "Z axis color",
+                    "displayNameKey": "Property_AxisZColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "legend": {
+            "displayName": "Legend",
+            "displayNameKey": "Object_Legend_DisplayName",
+            "properties": {
+                "showLegend": {
+                    "displayName": "Show legend",
+                    "displayNameKey": "Property_ShowLegend_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showLegendTitle": {
+                    "displayName": "Show legend title",
+                    "displayNameKey": "Property_ShowLegendTitle_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "legendMaxItems": {
+                    "displayName": "Max legend items",
+                    "displayNameKey": "Property_LegendMaxItems_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "legendFontSize": {
+                    "displayName": "Legend font size",
+                    "displayNameKey": "Property_LegendFontSize_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "legendTextColor": {
+                    "displayName": "Legend text color",
+                    "displayNameKey": "Property_LegendTextColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "legendTitleColor": {
+                    "displayName": "Legend title color",
+                    "displayNameKey": "Property_LegendTitleColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "legendBackgroundColor": {
+                    "displayName": "Legend background color",
+                    "displayNameKey": "Property_LegendBackgroundColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "markers": {
+            "displayName": "Markers",
+            "displayNameKey": "Object_Markers_DisplayName",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default marker color",
+                    "displayNameKey": "Property_DefaultColor_DisplayName",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "markerSize": {
+                    "displayName": "Marker size",
+                    "displayNameKey": "Property_MarkerSize_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "pointSizeScale": {
+                    "displayName": "Point size scale",
+                    "displayNameKey": "Property_PointSizeScale_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "opacity": {
+                    "displayName": "Marker opacity",
+                    "displayNameKey": "Property_Opacity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "selection": {
+            "displayName": "Selection & Highlight",
+            "displayNameKey": "Object_Selection_DisplayName",
+            "properties": {
+                "selectedOpacity": {
+                    "displayName": "Selected point opacity",
+                    "displayNameKey": "Property_SelectedOpacity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "unselectedOpacity": {
+                    "displayName": "Unselected point opacity",
+                    "displayNameKey": "Property_UnselectedOpacity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "highlightOpacity": {
+                    "displayName": "Highlight opacity",
+                    "displayNameKey": "Property_HighlightOpacity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "clearSelectionOnBackground": {
+                    "displayName": "Clear selection on background click",
+                    "displayNameKey": "Property_ClearSelectionOnBackground_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "camera": {
+            "displayName": "Camera",
+            "displayNameKey": "Object_Camera_DisplayName",
+            "properties": {
+                "autoRotate": {
+                    "displayName": "Auto-rotate scene",
+                    "displayNameKey": "Property_AutoRotate_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "autoRotateSpeed": {
+                    "displayName": "Auto-rotate speed",
+                    "displayNameKey": "Property_AutoRotateSpeed_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "zoomSensitivity": {
+                    "displayName": "Zoom sensitivity",
+                    "displayNameKey": "Property_ZoomSensitivity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "orbitSensitivity": {
+                    "displayName": "Orbit sensitivity",
+                    "displayNameKey": "Property_OrbitSensitivity_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "performance": {
+            "displayName": "Performance",
+            "displayNameKey": "Object_Performance_DisplayName",
+            "properties": {
+                "maxRenderedPoints": {
+                    "displayName": "Max rendered points",
+                    "displayNameKey": "Property_MaxRenderedPoints_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "downsampleDenseScenes": {
+                    "displayName": "Downsample dense scenes",
+                    "displayNameKey": "Property_DownsampleDenseScenes_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "autoFetchMoreData": {
+                    "displayName": "Auto-fetch more data",
+                    "displayNameKey": "Property_AutoFetchMoreData_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "aggregateSegments": {
+                    "displayName": "Aggregate fetched segments",
+                    "displayNameKey": "Property_AggregateSegments_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fetchTriggerPointCount": {
+                    "displayName": "Fetch trigger row count",
+                    "displayNameKey": "Property_FetchTriggerPointCount_DisplayName",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "diagnostics": {
+            "displayName": "Diagnostics",
+            "displayNameKey": "Object_Diagnostics_DisplayName",
+            "properties": {
+                "showHostDiagnostics": {
+                    "displayName": "Show host diagnostics",
+                    "displayNameKey": "Property_ShowHostDiagnostics_DisplayName",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "x": {
+                        "max": 1
+                    },
+                    "y": {
+                        "max": 1
+                    },
+                    "z": {
+                        "max": 1
+                    },
+                    "size": {
+                        "max": 1
+                    },
+                    "category": {
+                        "max": 1
+                    },
+                    "tooltip": {
+                        "max": 10
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "window": {
+                            "count": 10000
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "x"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "y"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "z"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "size"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "tooltip"
+                            }
+                        }
+                    ],
+                    "dataReductionAlgorithm": {
+                        "window": {
+                            "count": 10000
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "tooltip"
+        ],
+        "supportEnhancedTooltips": true
+    },
+    "supportsKeyboardFocus": true,
+    "supportsHighlight": true,
+    "supportsEmptyDataView": true,
+    "supportsMultiVisualSelection": true,
+    "supportsLandingPage": true,
+    "privileges": []
+}

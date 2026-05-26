@@ -1,0 +1,17 @@
+{
+		"version": "0.5.1.0",
+		"author": {"name":"Corey","email":"corey@example.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/native3DScatterB6091A08A42A4A299DBB4C9F4E92B6F1.pbiviz.json"
+			}
+		],
+		"visual": {"name":"native3DScatter","displayName":"Native 3D Scatter","guid":"native3DScatterB6091A08A42A4A299DBB4C9F4E92B6F1","visualClassName":"Visual","version":"0.5.1.0","description":"Native Power BI custom visual for 3D scatterplots.","supportUrl":"https://github.com/c0rrel8/local-codex","gitHubUrl":"https://github.com/c0rrel8/local-codex"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

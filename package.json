@@ -1,0 +1,17 @@
+{
+  "name": "3dscatter-workspace",
+  "private": true,
+  "workspaces": [
+    "visual",
+    "standalone"
+  ],
+  "scripts": {
+    "visual:bootstrap": "npm run bootstrap --workspace visual",
+    "visual:start": "npm run start --workspace visual",
+    "visual:verify": "npm run verify --workspace visual",
+    "visual:package": "npm run package --workspace visual",
+    "standalone:start": "npm run start --workspace standalone",
+    "standalone:check": "npm run check --workspace standalone",
+    "check": "npm run standalone:check && npm run visual:verify"
+  }
+}

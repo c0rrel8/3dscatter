@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "3dscatter",
+      "path": "."
+    },
+    {
+      "name": "Power BI visual",
+      "path": "visual"
+    },
+    {
+      "name": "Standalone scene",
+      "path": "standalone"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.tmp": true
+    },
+    "npm.packageManager": "npm"
+  }
+}
